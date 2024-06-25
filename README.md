@@ -1,3 +1,5 @@
+The dirty dozen
+
 * Assembler
 * C
 * Fortran
@@ -6,6 +8,7 @@
 * Python
 * Ruby
 * Haskell
-* J
+* Shell
 * Prolog
-* Lisp
+* Clojure
+* Rust
