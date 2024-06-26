@@ -1,0 +1,9 @@
+Okay so I was able to work this out. 
+
+Rather then go down the rabbit hole of "how do I get i386 to work" which I frankly do not recommend anyone to do. 
+
+Switch the target architecture to: darwin64-x86_64-cc 
+
+and more than likely whatever you were trying to do with i386 will work fine on x86_64. 
+
+That is the case for me anyways.
