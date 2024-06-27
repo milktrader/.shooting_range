@@ -1,0 +1,64 @@
+#### FAIL ####
+
+FAIL="... Pfffft, fizzle, dud ..."
+
+#### C ####
+
+Cstr="... Bullseye!"
+Cfile="bullseye"
+
+#### R ####
+
+Rstr="Nice aim!"
+Rfile="aim.r"
+
+#### haskell  ####
+
+Hstr="Click confirmed"
+Hfile="r"
+
+#### assembly  ####
+
+Astr="Keeping your powder dry"
+Afile="aim.r"
+
+#### clojure ####
+
+Clstr="Kaboom!"
+Clfile="aim.r"
+
+#### fortran ####
+
+Fstr="You hit the target!"
+Ffile="aim.r"
+ 
+#### julia ####
+
+Jstr="Flash, bang!"
+Jfile="aim.r"
+
+#### prolog ####
+
+Prstr="Locked and loaded"
+Prfile="aim.r"
+
+#### python ####
+
+Pystr="Peow, peow, peow"
+Pyfile="aim.r"
+
+#### ruby ####
+
+Rbstr="Ratatattat"
+Rbfile="aim.r"
+
+#### rust ####
+
+Rustr="Fire in the hole!"
+Rufile="aim.r"
+
+#### shell ####
+
+Sstr="Reload success"
+Sfile="aim.r"
+

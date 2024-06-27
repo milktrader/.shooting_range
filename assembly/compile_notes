@@ -1,5 +1,0 @@
-as -arch x86_64 powder.asm -o powder.o
-
-ld -arch x86_64  \
--L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib  \
--lSystem -o powder powder.o
