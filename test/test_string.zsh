@@ -5,7 +5,9 @@ autoload colors; colors
 
 echo $fg[yellow]String test:$reset_color
 
-if [ -e ../src/C/$Cpath ];
+OUTPUT=$(../src/C/$Cfile)
+
+if [[ ${OUTPUT} == $Cout ]];
 then
 	echo $fg[green]$Cstr$reset_color
 
@@ -13,10 +15,26 @@ else
 	echo $fg[red]$FAIL$reset_color
 fi
 
-if [ -e ../src/C/hello ];
+#if [[ ${OUTPUT} != $Cout ]]
+#then
+#	echo $fg[green]boom!$reset_color
+#
+#else
+#	echo $fg[red]$FAIL$reset_color
+#fi
+
+#echo $Cout
+#echo $OUTPUT
+
+OUTPUT_R=$(Rscript ../src/R/$Rfile)
+
+if [[ ${OUTPUT_R} == $Rout ]];
 then
-	echo $fg[green]boom!$reset_color
+	echo $fg[green]$Rstr$reset_color
 
 else
 	echo $fg[red]$FAIL$reset_color
 fi
+
+echo $OUTPUT_R
+echo $Rout

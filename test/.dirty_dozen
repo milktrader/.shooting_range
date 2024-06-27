@@ -6,11 +6,13 @@ FAIL="... Pfffft, fizzle, dud ..."
 
 Cstr="... Bullseye!"
 Cfile="bullseye"
+Cout="Bullseye!"
 
 #### R ####
 
 Rstr="Nice aim!"
 Rfile="aim.r"
+Rout="Take your aim"
 
 #### haskell  ####
 

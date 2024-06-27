@@ -1,5 +1,5 @@
 aim <- function(){
-   print('Take your aiim')
+   print('Take your aim')
 }
 
 aim()
