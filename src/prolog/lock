@@ -1,0 +1,4 @@
+#!/usr/bin/env swipl
+
+hello_world :- write('Locked and loaded'), nl, 
+               halt.

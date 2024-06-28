@@ -2,7 +2,7 @@
 
 int main()
 {
-	printf("Bullseye!");
+	printf("Bullseye!!");
 
 	return 0;
 }

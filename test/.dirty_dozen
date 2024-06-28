@@ -1,66 +1,65 @@
 #### FAIL ####
 
 FAIL="... Pfffft, fizzle, dud ..."
+PASS="... Nice shot, bullseye!..."
 
 #### C ####
 
-Cstr="... Bullseye!"
 Cfile="bullseye"
-Cout="Bullseye!"
+Cout="Bullseye!!"
 
 #### R ####
 
-Rstr="Nice aim!"
 Rfile="aim.r"
-Rout="Take your aim"
+Rout="Take your aim, sir"
 
 #### haskell  ####
 
-Hstr="Click confirmed"
-Hfile="r"
+Hfile="click"
+Hout="Click ... Bang ... Boom!"
 
 #### assembly  ####
 
-Astr="Keeping your powder dry"
-Afile="aim.r"
+Afile="powder"
+Aout="Let's keep the powder dry!"
 
 #### clojure ####
 
-Clstr="Kaboom!"
-Clfile="aim.r"
+Clfile="kaboom.clj"
+Clout="tick tock kaboom!"
 
 #### fortran ####
 
-Fstr="You hit the target!"
-Ffile="aim.r"
+Ffile="target"
+Fout="Focus on the target please."
  
 #### julia ####
 
-Jstr="Flash, bang!"
-Jfile="aim.r"
+Jfile="flash.jl"
+Jout="Flash, bang and booom!"
 
 #### prolog ####
 
-Prstr="Locked and loaded"
-Prfile="aim.r"
+Prfile="lock"
+Prout="Confirm locked and loaded"
 
 #### python ####
 
-Pystr="Peow, peow, peow"
-Pyfile="aim.r"
+Pyfile="peow.py"
+Pyout="pew pew pew peow"
 
 #### ruby ####
 
-Rbstr="Ratatattat"
-Rbfile="aim.r"
+Rbfile="ratatattat.rb"
+Rbout="tick tick tick"
 
 #### rust ####
 
-Rustr="Fire in the hole!"
-Rufile="aim.r"
+Rufile="fire"
+Ruout="Fire in the hole!"
 
 #### shell ####
 
-Sstr="Reload success"
-Sfile="aim.r"
+Sfile="reload.sh"
+Sout="Reload and take aim"
 
