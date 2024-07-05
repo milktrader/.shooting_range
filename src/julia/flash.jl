@@ -1,4 +1,4 @@
 #!/usr/bin/env julia
 
-println("Flash, bang, boom!")
+println("Flash, bang and booom!")
 

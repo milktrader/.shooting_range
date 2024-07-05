@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 
-puts 'Ratatattat'
+puts 'tick tick tick'
 

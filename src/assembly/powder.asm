@@ -1,7 +1,7 @@
 .code64
 .global _main
 .static_data
-msg: .ascii "\n Let's keep the powder dry!\n\n"
+msg: .ascii "Let's keep the powder dry!\n"
 .set msglen, (. - msg)
 .text
 _main:

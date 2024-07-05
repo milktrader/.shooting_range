@@ -2,14 +2,42 @@
 
 ############ init
 autoload colors; colors
-./.dirty_dozen
+source .dirty_dozen
 
+echo ""
 echo $fg[yellow]String test:$reset_color
+echo ""
 
 ############ c
-OUTPUT=$(../src/C/$Cfile)
+OUTPUT=$(../src/C/$Cfile) 
+if [[ ${OUTPUT} == $Cout ]]; 
+then 
+	echo $fg[green]$PASS$reset_color 
+else 
+	echo $fg[red]$FAIL$reset_color 
+fi 
 
-if [[ ${OUTPUT} == $Cout ]];
+############# r 
+OUTPUT=$(Rscript ../src/R/$Rfile) 
+if [[ ${OUTPUT} == $Rout ]]; 
+then 
+	echo $fg[green]$PASS$reset_color 
+else 
+	echo $fg[red]$FAIL$reset_color 
+fi
+
+############# assembly
+OUTPUT=$(../src/assembly/$Afile) 
+if [[ ${OUTPUT} == $Aout ]]; 
+then 
+	echo $fg[green]$PASS$reset_color 
+else 
+	echo $fg[red]$FAIL$reset_color 
+fi
+
+############# clojure 
+OUTPUTc=$(lein run ../src/clojure/$Clfile/src/$Clfile)
+if [[ ${OUTPUTc} == $Clout ]]; 
 then
 	echo $fg[green]$PASS$reset_color
 
@@ -17,40 +45,7 @@ else
 	echo $fg[red]$FAIL$reset_color
 fi
 
-############ r
-OUTPUT_R=$(Rscript ../src/R/$Rfile)
-
-if [[ ${OUTPUT_R} == $Rout ]];
-then
-	echo $fg[green]$PASS$reset_color
-
-else
-	echo $fg[red]$FAIL$reset_color
-fi
-
-############ assembly
-OUTPUT=$(../src/assembly/$Afile)
-
-if [[ ${OUTPUT} == $Aout ]];
-then
-	echo $fg[green]$PASS$reset_color
-
-else
-	echo $fg[red]$FAIL$reset_color
-fi
-
-############ clojure
-OUTPUT=$(../src/clojure/$Clfile)
-
-if [[ ${OUTPUT} == $Clout ]];
-then
-	echo $fg[green]$PASS$reset_color
-
-else
-	echo $fg[red]$FAIL$reset_color
-fi
-
-############ fortran
+############# fortran
 OUTPUT=$(../src/fortran/$Ffile)
 
 if [[ ${OUTPUT} == $Fout ]];
@@ -61,10 +56,10 @@ else
 	echo $fg[red]$FAIL$reset_color
 fi
 
-############ haskell
-OUTPUT=$(../src/haskell/$Hfile)
+############# haskell
+OUTPUT_h=$(../src/haskell/$Hfile)
 
-if [[ ${OUTPUT} == $Hout ]];
+if [[ ${OUTPUT_h} == $Hout ]];
 then
 	echo $fg[green]$PASS$reset_color
 
@@ -72,10 +67,10 @@ else
 	echo $fg[red]$FAIL$reset_color
 fi
 
-############ julia
-OUTPUT=$(../src/julia/$Jfile)
+############# julia
+OUTPUT_j=$(../src/julia/$Jfile)
 
-if [[ ${OUTPUT} == $Jout ]];
+if [[ ${OUTPUT_j} == $Jout ]];
 then
 	echo $fg[green]$PASS$reset_color
 
@@ -83,7 +78,7 @@ else
 	echo $fg[red]$FAIL$reset_color
 fi
 
-############ prolog
+############# prolog
 OUTPUT=$(../src/prolog/$Prfile)
 
 if [[ ${OUTPUT} == $Prout ]];
@@ -94,10 +89,10 @@ else
 	echo $fg[red]$FAIL$reset_color
 fi
 
-############ python
-OUTPUT=$(../src/python/$Pyfile)
+############# python
+OUTPUT_p=$(../src/python/$Pyfile)
 
-if [[ ${OUTPUT} == $Pyout ]];
+if [[ ${OUTPUT_p} == $Pyout ]];
 then
 	echo $fg[green]$PASS$reset_color
 
@@ -105,7 +100,7 @@ else
 	echo $fg[red]$FAIL$reset_color
 fi
 
-############ ruby
+############# ruby
 OUTPUT=$(../src/ruby/$Rbfile)
 
 if [[ ${OUTPUT} == $Rbout ]];
@@ -116,7 +111,7 @@ else
 	echo $fg[red]$FAIL$reset_color
 fi
 
-############ rust
+############# rust
 OUTPUT=$(../src/rust/$Rufile)
 
 if [[ ${OUTPUT} == $Ruout ]];
@@ -127,7 +122,7 @@ else
 	echo $fg[red]$FAIL$reset_color
 fi
 
-############ shell
+############# shell
 OUTPUT=$(../src/shell/$Sfile)
 
 if [[ ${OUTPUT} == $Sout ]];
@@ -140,5 +135,6 @@ fi
 
 ############ test of the test lines
 
-#echo $OUTPUT_R
-#echo $Rout
+echo ""
+echo $OUTPUTc
+echo $Clout

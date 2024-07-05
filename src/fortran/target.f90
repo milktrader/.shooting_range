@@ -1,6 +1,4 @@
-program target
-
-  ! This is a comment line
-  print *, 'Just a little target practice'
-        
-end program target
+program hello
+   !print *, "Focus on the target please."
+    print '(A)', "Focus on the target please."
+end program
