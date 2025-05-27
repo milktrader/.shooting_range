@@ -36,8 +36,8 @@ else
 fi
 
 ############# clojure 
-OUTPUTc=$(lein run ../src/clojure/$Clfile/src/$Clfile)
-if [[ ${OUTPUTc} == $Clout ]]; 
+OUTPUT=$(lein run ../src/clojure/$Clfile/src/$Clfile)
+if [[ ${OUTPUT} == $Clout ]]; 
 then
 	echo $fg[green]$PASS$reset_color
 
@@ -57,7 +57,7 @@ else
 fi
 
 ############# haskell
-OUTPUT_h=$(../src/haskell/$Hfile)
+OUTPUT_h=$(runghc ../src/haskell/$Hfile)
 
 if [[ ${OUTPUT_h} == $Hout ]];
 then
@@ -68,9 +68,9 @@ else
 fi
 
 ############# julia
-OUTPUT_j=$(../src/julia/$Jfile)
+OUTPUT=$(../src/julia/$Jfile)
 
-if [[ ${OUTPUT_j} == $Jout ]];
+if [[ ${OUTPUT} == $Jout ]];
 then
 	echo $fg[green]$PASS$reset_color
 
@@ -90,9 +90,9 @@ else
 fi
 
 ############# python
-OUTPUT_p=$(../src/python/$Pyfile)
+OUTPUT=$(../src/python/$Pyfile)
 
-if [[ ${OUTPUT_p} == $Pyout ]];
+if [[ ${OUTPUT} == $Pyout ]];
 then
 	echo $fg[green]$PASS$reset_color
 
@@ -135,6 +135,7 @@ fi
 
 ############ test of the test lines
 
-echo ""
-echo $OUTPUTc
-echo $Clout
+
+#echo ""
+#echo $OUTPUT_h
+#echo $Hout

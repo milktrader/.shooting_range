@@ -1,2 +1,2 @@
 :- initialization(main).
-main :- write('Locked and loaded'), nl, halt.
+main :- write('Confirm locked and loaded'), nl, halt.
