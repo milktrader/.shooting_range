@@ -1,4 +1,6 @@
 (ns kaboom.core)
 
-(defn -main [& args]
-  (println "tick tock kaboom!"))
+(defn -main
+  "I don't do a whole lot."
+  []
+  (println "Kaboom!"))
